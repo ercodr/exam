@@ -94,36 +94,60 @@ if(day == 20 && month === 'Jul' && year == 2021){
     document.getElementById('d1').style.backgroundColor = '#ffbb00';
     document.getElementById('d1').style.color = '#000000';
     document.getElementById('d1').style.fontWeight = 'bold';
+    detail[0].innerText = 'Project Management';
+    detail[1].innerText = 'Tuesday 20th July, 2021';
+    detail[2].innerText = '8:00am - 10:00am';
+    detail[3].innerText = 'Basement';
 }
 
-if(day == 22 && month === 'Jul' && year == 2021){
+if(day == 20 && month === 'Jul' && year == 2021){
     document.getElementById('d1').style.backgroundColor = '#ffbb00';
     document.getElementById('d1').style.color = '#000000';
     document.getElementById('d1').style.fontWeight = 'bold';
+    detail[0].innerText = 'Software Engineering';
+    detail[1].innerText = 'Thursday 22nd July, 2021';
+    detail[2].innerText = '8:00am - 10:00am';
+    detail[3].innerText = 'Basement';
 }
 
 if(day == 24 && month === 'Jul' && year == 2021){
     document.getElementById('d1').style.backgroundColor = '#ffbb00';
     document.getElementById('d1').style.color = '#000000';
     document.getElementById('d1').style.fontWeight = 'bold';
+    detail[0].innerText = 'Database (Oracle)';
+    detail[1].innerText = 'Saturday 24th July, 2021';
+    detail[2].innerText = '8:00am - 10:00am';
+    detail[3].innerText = 'Basement';
 }
 
 if(day == 27 && month === 'Jul' && year == 2021){
     document.getElementById('d1').style.backgroundColor = '#ffbb00';
     document.getElementById('d1').style.color = '#000000';
     document.getElementById('d1').style.fontWeight = 'bold';
+    detail[0].innerText = 'Research Method';
+    detail[1].innerText = 'Tuesday 27th July, 2021';
+    detail[2].innerText = '8:00am - 10:00am';
+    detail[3].innerText = 'Basement';
 }
 
 if(day == 29 && month === 'Jul' && year == 2021){
     document.getElementById('d1').style.backgroundColor = '#ffbb00';
     document.getElementById('d1').style.color = '#000000';
     document.getElementById('d1').style.fontWeight = 'bold';
+    detail[0].innerText = 'Data Comm II';
+    detail[1].innerText = 'Thursday 29th July, 2021';
+    detail[2].innerText = '8:00am - 10:00am';
+    detail[3].innerText = 'Basement';
 }
 
 if(day == 31 && month === 'Jul' && year == 2021){
     document.getElementById('d1').style.backgroundColor = '#ffbb00';
     document.getElementById('d1').style.color = '#000000';
     document.getElementById('d1').style.fontWeight = 'bold';
+    detail[0].innerText = 'Operating System';
+    detail[1].innerText = 'Saturday 31st July, 2021';
+    detail[2].innerText = '2:00pm - 4:00pm';
+    detail[3].innerText = 'Basement';
 }
 
 
