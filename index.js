@@ -131,27 +131,45 @@ if(day == 31 && month === 'Jul' && year == 2021){
 
 // ---------------------To REMOVE Button---------------------------- //
 if(day == 20 + nextDay && month === 'Jul' && year == 2021){
-    document.getElementById('d1').style.display = 'none';
+    btn[0].classList.add('completed');
+    btn[0].innerText = 'Completed!'
+    btn[0].style.color = 'red';
+    btn[0].style.backgroundColor = '#000';
 }
 
 if(day == 22 + nextDay && month === 'Jul' && year == 2021){
-    document.getElementById('d1').style.display = 'none';
+    btn[1].classList.add('completed');
+    btn[1].innerText = 'Completed!'
+    btn[1].style.color = 'red';
+    btn[1].style.backgroundColor = '#000';
 }
 
 if(day == 24 + nextDay && month === 'Jul' && year == 2021){
-    document.getElementById('d1').style.display = 'none';
+    btn[2].classList.add('completed');
+    btn[2].innerText = 'Completed!'
+    btn[2].style.color = 'red';
+    btn[2].style.backgroundColor = '#000';
 }
 
 if(day == 27 + nextDay && month === 'Jul' && year == 2021){
-    document.getElementById('d1').style.display = 'none';
+    btn[3].classList.add('completed');
+    btn[3].innerText = 'Completed!'
+    btn[3].style.color = 'red';
+    btn[3].style.backgroundColor = '#000';
 }
 
 if(day == 29 + nextDay && month === 'Jul' && year == 2021){
-    document.getElementById('d1').style.display = 'none';
+    btn[4].classList.add('completed');
+    btn[4].innerText = 'Completed!'
+    btn[4].style.color = 'red';
+    btn[4].style.backgroundColor = '#000';
 }
 
 if(day == 31 + nextDay && month === 'Jul' && year == 2021){
-    document.getElementById('d1').style.display = 'none';
+    btn[5].classList.add('completed');
+    btn[5].innerText = 'Completed!'
+    btn[5].style.color = 'red';
+    btn[5].style.backgroundColor = '#000';
 }
 
 
