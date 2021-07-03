@@ -56,4 +56,31 @@
 
 .completed{
     font-size: x-large;
+    color: red;
+    background-color: black;
+}
+
+.active{
+    background-color: #ffbb00;
+    color: #000000;
+    font-weight: bold;
+}
+
+.alert{
+    color: rgb(0, 255, 0);
+    transition: .5s;
+    animation: alert 5s infinite;
+}
+
+ 
+@keyframes alert {
+      0% {opacity: 100;}
+     10% {opacity: 50;}
+     20% {opacity: 0;}
+     30% {opacity: 100;} 
+     40% {opacity: 50;}
+     50% {opacity: 0;}
+     60% {opacity: 100;}
+     70% {opacity: 50;}
+     80% {opacity: 0;}
 }
