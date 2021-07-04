@@ -87,7 +87,7 @@
 }
  
 @keyframes alert {
-      0% {opacity: 100;}
+       0% {opacity: 100;}
      10% {opacity: 50;}
      20% {opacity: 0;}
      30% {opacity: 100;} 
@@ -102,4 +102,12 @@
     body{
         min-width: 400px;
     }
+}
+
+.footer-div{
+    background-color: #0059ff;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    font-size: small;
 }

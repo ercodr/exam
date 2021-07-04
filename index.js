@@ -89,8 +89,12 @@ var shortMonthName = new Intl.DateTimeFormat("en-US", { month: "short" }).format
 var month = shortMonthName(date); // "Jul"
 
 const vacDay = 31;
+const examCom = 20;
 let vacSpan = document.getElementById('vacationSpan');
 let examSpan = document.getElementById('examSpan');
+let examComSpan = document.getElementById('examComSpan');
+
+examComSpan.textContent = examCom - day;
 
 vacSpan.textContent = vacDay - day;
 
