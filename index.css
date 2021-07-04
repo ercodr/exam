@@ -72,6 +72,19 @@
     animation: alert 5s infinite;
 }
 
+.timers{
+    background-color: #141414;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.daysLeft{
+    font-weight: bolder;
+    color: #ffbb00;
+    font-size: large;
+}
  
 @keyframes alert {
       0% {opacity: 100;}
@@ -83,4 +96,10 @@
      60% {opacity: 100;}
      70% {opacity: 50;}
      80% {opacity: 0;}
+}
+
+@media screen and (max-width: 566px){
+    body{
+        min-width: 400px;
+    }
 }

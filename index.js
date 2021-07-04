@@ -88,6 +88,15 @@ var nextDay = 1;
 var shortMonthName = new Intl.DateTimeFormat("en-US", { month: "short" }).format;
 var month = shortMonthName(date); // "Jul"
 
+const vacDay = 31;
+let vacSpan = document.getElementById('vacationSpan');
+let examSpan = document.getElementById('examSpan');
+
+vacSpan.textContent = vacDay - day;
+
+if(day < 20){
+    examSpan.textContent = 6;
+}
 
 // -------------To CHANGE Button Color --------- //
 if(day == 20 && month === 'Jul' && year == 2021){
@@ -96,6 +105,7 @@ if(day == 20 && month === 'Jul' && year == 2021){
     detail[1].innerText = 'Tuesday 20th July, 2021';
     detail[2].innerText = '8:00am - 10:00am';
     detail[3].innerText = 'Basement';
+    examSpan.textContent = 6;
 }
 
 if(day == 22 && month === 'Jul' && year == 2021){
@@ -104,6 +114,7 @@ if(day == 22 && month === 'Jul' && year == 2021){
     detail[1].innerText = 'Thursday 22nd July, 2021';
     detail[2].innerText = '8:00am - 10:00am';
     detail[3].innerText = 'Basement';
+    examSpan.textContent = 5;
 }
 
 if(day == 24 && month === 'Jul' && year == 2021){
@@ -112,6 +123,7 @@ if(day == 24 && month === 'Jul' && year == 2021){
     detail[1].innerText = 'Saturday 24th July, 2021';
     detail[2].innerText = '8:00am - 10:00am';
     detail[3].innerText = 'Basement';
+    examSpan.textContent = 4;
 }
 
 if(day == 27 && month === 'Jul' && year == 2021){
@@ -120,6 +132,7 @@ if(day == 27 && month === 'Jul' && year == 2021){
     detail[1].innerText = 'Tuesday 27th July, 2021';
     detail[2].innerText = '8:00am - 10:00am';
     detail[3].innerText = 'Basement';
+    examSpan.textContent = 3;
 }
 
 if(day == 29 && month === 'Jul' && year == 2021){
@@ -128,6 +141,7 @@ if(day == 29 && month === 'Jul' && year == 2021){
     detail[1].innerText = 'Thursday 29th July, 2021';
     detail[2].innerText = '8:00am - 10:00am';
     detail[3].innerText = 'Basement';
+    examSpan.textContent = 2;
 }
 
 if(day == 31 && month === 'Jul' && year == 2021){
@@ -136,6 +150,7 @@ if(day == 31 && month === 'Jul' && year == 2021){
     detail[1].innerText = 'Saturday 31st July, 2021';
     detail[2].innerText = '2:00pm - 4:00pm';
     detail[3].innerText = 'Basement';
+    examSpan.textContent = 1;
 }
 
 // ----------------------------------------------------------------- //
@@ -184,5 +199,14 @@ let span = document.querySelectorAll('.alert');
 if(day < 20){
     span.forEach(button => {
         button.textContent = 'Upcoming!';
+    });
+}
+
+if(month == 'Aug' || month == 'Sept' || month == 'Oct' || month == 'Nov' || month == 'Dec'){
+    span.forEach(button => {
+        button.textContent = 'Completed!';
+        button.style.color = 'red';
+        document.querySelector('.right').style.display = 'none';
+        document.querySelector('.left').style.display = 'none';
     });
 }
