@@ -81,7 +81,7 @@ btn[5].addEventListener('click', () => {
 
 var date = new Date();
 var day = date.getDate();
-// var month = date.getMonth().toString();
+var monthNum = date.getMonth();
 var year = date.getFullYear();
 var nextDay = 1;
 
@@ -90,6 +90,7 @@ var month = shortMonthName(date); // "Jul"
 
 const vacDay = 31;
 const examCom = 20;
+
 let vacSpan = document.getElementById('vacationSpan');
 let examSpan = document.getElementById('examSpan');
 let examComSpan = document.getElementById('examComSpan');
@@ -167,50 +168,74 @@ btn.forEach(button => {
 
 
 // ---------------------To REMOVE Button---------------------------- //
-if(day > 20 && month === 'Jul' && year == 2021){
+if(day > 20 && month == 'Jul' && year == 2021){
     btn[0].classList.add('completed');
     btn[0].innerText = 'Completed!'
 }
 
-if(day > 22 && month === 'Jul' && year == 2021){
+if(day > 22 && month == 'Jul' && year == 2021){
     btn[1].classList.add('completed');
     btn[1].innerText = 'Completed!'
 }
 
-if(day > 24 && month === 'Jul' && year == 2021){
+if(day > 24 && month == 'Jul' && year == 2021){
     btn[2].classList.add('completed');
     btn[2].innerText = 'Completed!'
 }
 
-if(day > 27 && month === 'Jul' && year == 2021){
+if(day > 27 && month == 'Jul' && year == 2021){
     btn[3].classList.add('completed');
     btn[3].innerText = 'Completed!'
 }
 
-if(day > 29 && month === 'Jul' && year == 2021){
+if(day > 29 && month == 'Jul' && year == 2021){
     btn[4].classList.add('completed');
     btn[4].innerText = 'Completed!'
 }
 
-if(day > 31 && month === 'Jul' && year == 2021){
+if(day > 31 && month == 'Jul' && year == 2021){
     btn[5].classList.add('completed');
     btn[5].innerText = 'Completed!'
     
 }
 
 let span = document.querySelectorAll('.alert');
+let toHideExam = document.getElementById('toHideExam');
+let toHideVacate = document.getElementById('toHideVacate');
+let toHideExamCom = document.getElementById('toHideExamCom');
 
 if(day < 20){
     span.forEach(button => {
         button.textContent = 'Upcoming!';
     });
+} else {
+    toHideExam.style.display = 'none';
 }
 
-if(month == 'Aug' || month == 'Sept' || month == 'Oct' || month == 'Nov' || month == 'Dec'){
-    span.forEach(button => {
-        button.textContent = 'Completed!';
-        button.style.color = 'red';
-        document.querySelector('.right').style.display = 'none';
-        document.querySelector('.left').style.display = 'none';
+let examNextDay = document.getElementById('examNextDay');
+
+if(day == 19 && month === 'Jul'){
+    toHideExam.style.display = 'none';
+    examNextDay.textContent = 'Good luck on your exams tomorrow!';
+    examNextDay.classList.add('alert');
+}
+
+if(day == 31 && month === 'Jul'){
+    toHideVacate.style.display = 'none';
+    examNextDay.textContent = 'You are vacating tomorrow!';
+    examNextDay.classList.add('alert');
+}
+
+
+let main = document.querySelectorAll('.main');
+
+if(month != 'Jul'){
+    btn.forEach(button => {
+        button.innerText = 'Completed!';
+        button.classList.add('completed');
+        toHideVacate.style.display = 'none';
+        toHideExam.style.display = 'none';
+        toHideExamCom.style.display = 'none';
+        document.querySelector('.timers').style.display = 'none';
     });
 }
