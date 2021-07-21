@@ -158,6 +158,28 @@ if(day == 31 && month === 'Jul' && year == 2021){
     examSpan.textContent = 1;
 }
 
+//----------------------------------------------------------------------//
+if(day > 20 && month === 'Jul' && year == 2021){
+    examSpan.textContent = 5;
+}
+if(day > 22 && month === 'Jul' && year == 2021){
+    examSpan.textContent = 4;
+}
+if(day > 24 && month === 'Jul' && year == 2021){
+    examSpan.textContent = 3;
+}
+if(day > 27 && month === 'Jul' && year == 2021){
+    examSpan.textContent = 2;
+}
+if(day > 29 && month === 'Jul' && year == 2021){
+    examSpan.textContent = 1;
+}
+if(month === 'Aug' && year === 2021){
+   let toHideExamCom = document.getElementById('toHideExamCom');
+   toHideExamCom.style.display = 'none';
+}
+
+
 // ----------------------------------------------------------------- //
 btn.forEach(button => {
     if(button.textContent === 'Completed!'){
