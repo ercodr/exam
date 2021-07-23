@@ -33,7 +33,7 @@ btn[1].addEventListener('click', () => {
 btn[2].addEventListener('click', () => {
     detail[0].innerText = 'Database (Oracle)';
     detail[1].innerText = 'Saturday 24th July, 2021';
-    detail[2].innerText = '8:00am - 10:00am';
+    detail[2].innerText = '10:00am - 12:00pm';
     detail[3].innerText = 'Basement';
     btn[2].classList.add('clickEvent');
     btn[1].classList.remove('clickEvent');
